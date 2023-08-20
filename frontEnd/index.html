@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | FrontQ Blog</title>
+    <link rel="stylesheet" href="./signUp_signIn/signup.css">
+    <script src="https://kit.fontawesome.com/9896300578.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container1">
+        <div class="form-box1">
+            <h1>Sign Up</h1>
+            <form action="/signup" method="post">
+
+                <div class="input-group1">
+                    <div>
+                        <label for="username">Username</label><span id="username-error"></span>
+
+
+                        <div class="input-field1">
+                            <i class="fa-solid fa-user"></i>
+
+                            <input id="username" name="username" type="text" placeholder="Username" onkeyup="validateName()">
+
+                        </div>
+
+
+                    </div>
+                    <label for="email">Email</label><span id="email-error"></span>
+                    <div class="input-field1">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input id="email" type="email" name="email" placeholder="Email" onkeyup="validateEmail()">
+
+
+                    </div>
+
+
+                    <div>
+                        <label for="password">Password</label><span id="password-error"></span>
+                        <div class="input-field1">
+                            <i class="fa-solid fa-lock"></i>
+                            <input id="password" name="password" type="password" placeholder="Password" onkeyup="validatePassword()">
+
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <label for="password">Confirm Password</label><span id="confirmPassword-error"></span>
+                        <div class="input-field1">
+                            <i class="fa-solid fa-lock"></i>
+                            <input id="confirmPassword" type="password" placeholder="Confirm Password"
+                                onkeyup="validateConfirm()">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="links">
+
+
+                        <a href="signin.html">Sign in</a>
+
+                    </div>
+                    <div class="btn-field1">
+
+                        <button id="submit" type="submit" onclick="return validateForm()">Sign Up</button>
+                        <span id="submit-error"></span>
+                    </div>
+            </form>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    </div>
+
+
+    <script src="./signUp_signIn/signup.js"></script>
+</body>
+
+</html>

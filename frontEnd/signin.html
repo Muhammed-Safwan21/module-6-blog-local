@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | FrontQ Blog</title>
+    <link rel="stylesheet" href="./signUp_signIn/signin.css">
+    <script src="https://kit.fontawesome.com/9896300578.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="container1">
+        <div class="form-box1">
+            <h1>Sign in</h1>
+            <form action="/login" method="post">
+
+                <div class="input-group1">
+                    <div>
+                        <label for="username">Username</label><span id="username-error"></span>
+
+                        <div class="input-field1">
+                            <i class="fa-solid fa-user"></i>
+
+                            <input id="username" name="username" type="text" placeholder="User Name" onkeyup="validateName()">
+                            
+                        </div>
+                    </div>
+                    <label for="email">Email</label><span id="email-error"></span>
+                    <div class="input-field1">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input id="email" name="email" type="email" placeholder="Email" onkeyup="validateEmail()">
+                        
+                    </div>
+                    <div class="password">
+                        <label for="password">Password</label> <span id="password-error"></span>
+                        <div class="input-field1">
+                            <i class="fa-solid fa-lock"></i>
+                            <input id="password" type="password" name="password" placeholder="Password" onkeyup="validatePassword()">
+                           
+                        </div>
+                    </div>
+
+
+                    <div class="links">
+                        <div class="link1">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <div class="link2">
+                            <a href="index.html">Sign Up</a>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <div class="btn-field1">
+
+                    <button id="submit" type="submit" onclick="return validateForm()">Sign in</button><span
+                        id="submit-error"></span>
+                </div>
+
+
+        </div>
+
+        </form>
+    </div>
+    </div>
+
+    <script src="./signUp_signIn/signIn.js"></script>
+</body>
+
+</html>
